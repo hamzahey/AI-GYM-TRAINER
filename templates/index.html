@@ -8,5 +8,15 @@
     <p>Track your exercises in real-time using your webcam. Choose between Bicep Curls and Pushups.</p>
     <a class="btn btn-primary btn-lg" href="{{ url_for('bicep_curls') }}" role="button">Bicep Curls</a>
     <a class="btn btn-secondary btn-lg" href="{{ url_for('pushups') }}" role="button">Pushups</a>
+    <br><br>
 </div>
+
+<footer class="footer py-1">
+    <div class="container text-center">
+        <img src="{{ url_for('static', filename='img/xodeum.svg') }}" alt="Xodeum Logo" width="30" height="30" class="inline">
+        <br>
+        <p class="inline">Designed by Xodeum</p>
+        <a href="https://www.xodeum.com/">www.xodeum.com</a>
+    </div>
+</footer>
 {% endblock %}
