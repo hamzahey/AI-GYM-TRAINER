@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="display-4">Pushup Counter</h1>
+<p class="lead">Track your pushups in real-time using your webcam.</p>
+<hr class="my-4">
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="{{ url_for('video_feed_pushups') }}" allowfullscreen></iframe>
+</div>
+{% endblock %}

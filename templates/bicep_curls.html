@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="display-4">Bicep Curl Counter</h1>
+<p class="lead">Track your bicep curls in real-time using your webcam.</p>
+<hr class="my-4">
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="{{ url_for('video_feed_bicep_curls') }}" allowfullscreen></iframe>
+</div>
+{% endblock %}
